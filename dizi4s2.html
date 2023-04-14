@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sinema Sayfa Tasarımı</title>
+<style>
+body { background:#292929}
+.container { width:1000px; height:auto; background:#9F9F9F; margin:0 auto;}
+header { width:1000px; height:200px; background:#D8D8D8; float:left }
+figure { margin:20px 0 0 40px; float:left}
+nav { width:1000px; height:auto; background:#A0A0A0; margin:0 0 250px 0;}
+main { width:950px; height:780px; padding:0 50px 50px 0;}
+article { width:900px; height:auto}
+footer { width:980px; height:50px; background:#D8D8D8; text-align:right; line-height:50px; padding:0 20px 0 0}
+
+header input {
+	
+    width:250px;
+	height:35px;
+	border:;
+	margin:-25px 0 0 650px;
+	float:left;
+	font:13px Arial;		
+}
+header input:focus, button:focus {
+   outline:none;
+	}
+header button {
+	
+	width:60px;
+	height:40px;
+	float:left;
+	margin:-40px 0 0 908px;
+	background:#A2A2A2;
+	font:bold 15px Arial;	
+	}
+header button:hover {
+	background:#5C5C5C;
+	color:#fff;
+	}
+.isimler {
+	clear:both;
+	width:290px;
+	height:30px;
+    border-bottom:2px solid #d8d8d8;
+	font:20px Tahoma;
+	line-height:30px;
+	margin:0 0 30px 20px;
+	padding:0 0 0 10px;}	
+.menu {
+	width:900px;
+	height:50px;
+	margin:0 auto;
+	}
+	
+.menu ul { 
+    padding:0;
+    margin:0;
+	
+	}
+	
+.menu ul li {
+	
+   float:left;
+   list-style:none;	
+   
+}
+
+.menu ul li a {
+	
+   display:block;
+   width:150px;
+   height:40px;
+   font:20px Tahoma;
+   background:#000;
+   color:#fff;
+   margin:0 0 0 20px;
+   text-align:center;
+   text-decoration:none;
+   line-height:40px;
+   border-radius:0 0 5px 5px;
+   
+}
+.menu ul li a:hover {
+	background:#D8D8D8;
+	color:#000;
+	box-shadow:0 5px 3px #000
+}
+main section { width:1000px; height:auto; }
+
+.video { margin:0 0 0 200px;}
+.fragman { 
+margin:110px 55px 0 -60px;
+width:80px;
+height:30px;
+background:#464646;
+color:#fff;
+}
+select {
+	
+width:80px;
+height:30px;
+background:#464646;
+color:#fff;	
+margin:110px 55px 0 224px;	
+	}
+.fragman:focus { outline:none;}
+
+	
+section #poster { float:left; margin:0 30px 0 30px;}
+section #poster:hover { opacity:0.7; cursor:pointer;}
+
+footer span:hover { text-decoration:underline;}
+</style>
+
+</head>
+
+<body>
+<div class="container">
+<header>
+<figure id="logo"><img src="images/logo.png" width="150"/></figure>
+<input type="text" placeholder=" Aramak istediğiniz Film&Dizi adını giriniz"/>
+<button>Ara</button>
+</header>
+<nav>
+<div class="menu">
+<ul>
+<li><a href="cinemawebsite.html">Anasayfa</a></li>
+<li><a href="">Kategoriler</a></li>
+<li><a href="">Fimler</a></li>
+<li><a href="">Diziler</a></li>
+<li><a href="">İMDB Top 10</a></li>
+</ul>
+</nav>
+<main>
+<div class="isimler"><b>Vikings (2.Sezon)</b></div>
+<section>
+<div id="poster"><img src="images/dizi4.jpg" width="200"/></div>
+</section>
+<section class="aciklama">
+<article>
+
+<b>Tür</b>: Tarihsel, Drama  <br/><br/>
+
+<b>Yapım</b>: 2013 <br/><br/>
+
+<b>Yönetmen</b>: Michael Hirst <br/><br/>
+
+<b>Oyuncular</b> Travis Fimmel, Clive Standen, Katheryn Winnick <br/><br/>
+
+<b>Dizi Konusu</b>: İrlanda'da filme alınan Vikings, Viking Ragnar Lodbrok'un hayatı ve hikâyelerinden esinlenilmiştir. Ragnar Lodbrok, en bilindik İskandinav mitolojisinin kahraman ve kötü şöhretli Fransa ve İngiltere'nin belalısı haline gelmiştir. Bir Viking çiftçi olarak canlandırılan Ragnar, İngiltere'ye yaptığı ilk baskınları kardeşi Rollo ve karısı savaşçı Lagertha ile birlikte gerçekleştirmiştir.
+</article></section>
+
+<a href="dizi4.html"><input id="fragman1" class="fragman" type="button" value="1.Sezon"/></a>
+<a href="dizi4s2.html"><input id="fragman2" class="fragman" type="button" value="2.Sezon"/></a>
+<a href="dizi4s3.html"><input id="fragman3" class="fragman" type="button" value="3.Sezon"/></a>
+<select>
+<option>Bölümler</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+</select>
+<section class="video">
+
+<video controls="controls" preload="none" width="600">
+<source src="series/vikings_season2.mp4" type="video/mp4"/>
+</video>
+</section>
+</main>
+<footer>
+<p><small>&copy;2014-2020 <span><mark>Filmplus.com</mark></span> Tüm hakları saklıdır.</small></p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sinema Sayfa Tasarımı</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<style>
+body { background:#292929}
+.container { width:1000px; height:auto; background:#9F9F9F; margin:0 auto;}
+header { width:1000px; height:200px; background:#D8D8D8; float:left }
+figure { margin:20px 0 0 40px; float:left}
+nav { width:1000px; height:auto; background:#A0A0A0; margin:0 0 250px 0;}
+main { width:1000px; height:autopx;}
+footer { width:980px; height:50px; background:#D8D8D8; text-align:right; line-height:50px; padding:0 20px 0 0}
+
+header input {
+	
+    width:250px;
+	height:35px;
+	border:;
+	margin:-25px 0 0 650px;
+	float:left;
+	font:13px Arial;		
+}
+header input:focus, button:focus {
+   outline:none;
+	}
+header button {
+	
+	width:60px;
+	height:40px;
+	float:left;
+	margin:-40px 0 0 908px;
+	background:#A2A2A2;
+	font:bold 15px Arial;	
+	}
+header button:hover {
+	background:#5C5C5C;
+	color:#fff;
+	}
+	
+.menu {
+	width:900px;
+	height:50px;
+	margin:0 auto;
+	}
+	
+.menu ul { 
+    padding:0;
+    margin:0;
+	
+	}
+	
+.menu ul li {
+	
+   float:left;
+   list-style:none;
+   position:relative
+   
+}
+
+.menu ul li a {
+	
+   display:block;
+   width:150px;
+   height:40px;
+   font:20px Tahoma;
+   background:#000;
+   color:#fff;
+   margin:0 0 0 20px;
+   text-align:center;
+   text-decoration:none;
+   line-height:40px;
+   border-radius:0 0 5px 5px;
+   
+}
+.menu ul li a:hover {
+	background:#D8D8D8;
+	color:#000;
+	box-shadow:0 5px 3px #000
+}
+
+.menu ul li ul {
+    display:none;
+	position:absolute;
+	left:0;
+	top:40px;
+}
+.menu ul li:hover ul { 
+    display:block;
+}
+
+main section { width:1000px; height:375px; margin:50px 0 0 20px;}
+.isimler {
+	clear:both;
+	width:290px;
+	height:30px;
+    border-bottom:2px solid #d8d8d8;
+	font:22px Tahoma;
+	line-height:30px;
+	margin:0 0 0 20px;
+	padding:0 0 0 10px;
+	}
+section #poster { float:left; margin:0 0 0 30px;}
+section #poster:hover { opacity:0.7; cursor:pointer;}
+
+section ul { padding:0; margin:0;}
+section ul li {
+	
+	float:left;
+	display:block;
+	width:175px;
+	height:20px;
+	margin:20px 0 0 50px;
+	font:bold 16px tahoma;
+	text-align:right
+	
+}
+section ul li a { text-decoration:none; color:#000;}
+section ul li a:hover { text-decoration:underline;}
+footer span:hover { text-decoration:underline;}
+</style>
+
+</head>
+
+<body>
+<div class="container">
+<header>
+<figure id="logo"><img src="images/logo.png" width="150"/></figure>
+<input type="text" placeholder=" Aramak istediğiniz Film&Dizi adını giriniz"/>
+<button>Ara</button>
+</header>
+<nav>
+<div class="menu">
+<ul>
+<li><a href="cinemawebsite.html">Anasayfa</a></li>
+<li><a href="">Kategoriler</a>
+<ul>
+<li><a href="">İMDB Top 10</a></li>
+<li><a href="">Komedi</a></li>
+<li><a href="">Korku</a></li>
+<li><a href="">Dram</a></li>
+<li><a href="">Fantastik</a></li>
+<li><a href="">Romantik</a></li>
+<li><a href="">Psikolojik</a></li>
+<li><a href="">Gerilim</a></li>
+<li><a href="">Bilimkurgu</a></li>
+<li><a href="">Müzikal</a></li>
+<li><a href="">Savaş</a></li>
+<li><a href="">Polisiye</a></li>
+</ul></li>
+<li><a href="">Fimler</a></li>
+<li><a href="">Diziler</a></li>
+<li><a href="">İMDB Top 10</a></li>
+</ul>
+</nav>
+<main>
+<div class="isimler">Filmler</div>
+<section>
+ <div id="poster"><a href="film1.html"><img src="images/film1.jpg" width="200"/></a></div>
+ <div id="poster"><a href="film2.html"><img src="images/film2.jpg" width="200"/></a></div>
+ <div id="poster"><a href="film3.html"><img src="images/film3.jpg" width="200"/></a></div>
+ <div id="poster"><a href="film4.html"><img src="images/film4.jpg" width="200" height="298"/></a></div>
+ <ul>
+ <li><a href="film1.html">Yıldız Tozu</a></li>
+ <li><a href="film2.html">It</a></li>
+ <li><a href="film3.html">John Wick 3</a></li>
+ <li><a href="film4.html">Joker</a></li>
+ </ul>
+</section>
+<div class="isimler">Diziler</div>
+<section>
+ <div id="poster"><a href="dizi1.html"><img src="images/dizi1.jpg" width="200" height="298"/></a></div>
+ <div id="poster"><a href="dizi2.html"><img src="images/dizi2.jpg" width="200" /></a></div>
+ <div id="poster"><a href="dizi3.html"><img src="images/dizi3.jpg" width="200" /></a></div>
+ <div id="poster"><a href="dizi4.html"><img src="images/dizi4.jpg" width="200" height="298" /></a></div>
+ <ul>
+ <li><a href="dizi1.html">Stranger Things</a></li>
+ <li><a href="">Tepedeki Ev</a></li>
+ <li><a href="">La Casa De Papel</a></li>
+ <li><a href="">Vikings</a></li>
+ </ul>
+</section>
+<div class="isimler">Ödüllü Filmler</div>
+<section>
+ <div id="poster"><a href="odullu1.html"><img src="images/odullu1.jpg" width="200" height="298"/></a></div>
+ <div id="poster"><a href="odullu2.html"><img src="images/odullu2.jpg" width="200" height="298"/></a></div>
+ <div id="poster"><a href="odullu3.html"><img src="images/odullu3.jpg" width="200" height="298"/></a></div>
+ <div id="poster"><a href="odullu4.html"><img src="images/odullu4.jpg" width="200" height="298"/></a></div>
+ <ul>
+ <li><a href="">Sefiller</a></li>
+ <li><a href="">Soysuzlar Çetesi</a></li>
+ <li><a href="">İz Peşinde</a></li>
+ <li><a href="">Başlangıç</a></li>
+ </ul>
+</section>
+<div class="isimler">Yakında</a></div>
+<section>
+ <div id="poster"><img src="images/yakinda3.jpg" width="200" height="298"/></div>
+ <div id="poster"><img src="images/yakinda2.jpg" width="200" height="298"/></div>
+ <div id="poster"><img src="images/yakinda1.jpg" width="200" height="298"/></div>
+ <div id="poster"><img src="images/yakinda4.jpg" width="200" height="298"/></div>
+ <ul>
+ <li><a href="">Avatar 2</a></li>
+ <li><a href="">Minyonlar : Gurunun Yükselişi</a></li>
+ <li><a href="">Hızlı ve Öfkeli 9</a></li>
+ <li><a href="">John Wick 4</a></li>
+ </ul>
+</section>
+
+</main>
+<footer>
+<p><small>&copy;2014-2020 <span><mark>Filmplus.com</mark></span> Tüm hakları saklıdır.</small></p>
+</footer>
+</div>
+</body>
+</html>
